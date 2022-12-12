@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/default_option_border_bg"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="#3E3D3E"
+            android:textSize="23sp"
+            tools:text="What country does this flag belong to?"/>
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/quiz_image"
+            tools:src ="@drawable/german"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="35"
+                android:minHeight="40dp"
+                android:progress="5" />
+
+                 <TextView
+                     android:id="@+id/tv_progressBar"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:gravity="center"
+                     android:padding="15dp"
+                     android:textColor="#7E7E7E"
+                     android:textSize="14sp"
+                     tools:text="0/35"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_optionOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:background="@drawable/default_option_border_bg"
+            android:layout_margin="10dp"
+            android:textColor="#7E7E7E"
+            android:textSize="14sp"
+            tools:text="Biafra"/>
+
+        <TextView
+            android:id="@+id/tv_optionTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:textColor="#7E7E7E"
+            android:padding="15dp"
+            android:textSize="14sp"
+            tools:text="Germany"/>
+
+        <TextView
+            android:id="@+id/tv_optionThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#7E7E7E"
+            android:background="@drawable/default_option_border_bg"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:textSize="14sp"
+            tools:text="China"/>
+
+        <TextView
+            android:id="@+id/tv_optionFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:background="@drawable/default_option_border_bg"
+            android:textColor="#7E7E7E"
+            android:textSize="18sp"
+            tools:text="Nigeria"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#A36FFD"
+             tools:tex="Start"
+            android:textColor="#322C2C" />
+
+    </LinearLayout>
+
+</ScrollView>

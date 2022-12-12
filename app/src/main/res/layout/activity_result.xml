@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101D67"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".resultActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+       android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#A87E40"
+        tools:text="Result"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"/>
+
+
+    <ImageView
+        android:id="@+id/trophy"
+        android:layout_width="match_parent"
+        android:layout_height="266dp"
+        android:contentDescription="image"
+        android:src="@drawable/ic_trophy" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Congratulations"
+        android:textColor="#ACB165"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/tv_User_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textColor="#A9B13B"
+        android:textSize="26sp"
+        tools:text="username"
+        android:textStyle="bold"
+        tools:src="username" />
+
+    <TextView
+        android:id="@+id/tv_Score"
+        android:layout_width="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:textColor="#AC6805"
+        tools:text="You Score 30 out of 38"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="#FF6200EE"
+        android:text="Play Again"
+        android:textColor="#A9B13B"
+        android:textSize="18sp"/>
+</LinearLayout>
